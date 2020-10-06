@@ -20,6 +20,7 @@ function App() {
           width: 500,
           background: "#808080",
           borderRadius: 2,
+          position: "relative",
         }}
       >
         <div
@@ -28,36 +29,39 @@ function App() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            width: "100%",
-            marginTop: 60,
+            marginTop: 30,
           }}
         >
-          <div
+          <img
+            src={logo}
+            alt="img"
             style={{
               height: 50,
               width: 50,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              border: "1px solid gray",
               borderRadius: 25,
-              background: "#9f6060",
+              background: "green",
             }}
-          >
-            <img src={logo} alt="img" style={{ height: 50, width: 50 }}></img>
-          </div>
+          />
 
-          <div>LeagueX gaming pvt ltd</div>
-          <div>The Ultimate Fantasy Sports</div>
+          <div style={{ color: "#FFF", padding: 4 }}>
+            LeagueX gaming pvt ltd
+          </div>
+          <div style={{ color: "#FFF", padding: 4 }}>
+            The Ultimate Fantasy Sports
+          </div>
         </div>
+
         <div
           style={{
             display: "flex",
+            position: "absolute",
+            bottom: 10,
+            right: 10,
             justifyContent: "flex-end",
-            marginTop: 110,
-            marginRight: 16,
           }}
         >
-          <div>www.Leaguex.com</div>
+          <div style={{ color: "#FFF" }}>www.Leaguex.com</div>
         </div>
       </div>
     </div>
